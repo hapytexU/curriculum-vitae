@@ -1,1 +1,1 @@
-# HaPyTeX curriculum vit&aelig;
+# curriculum vit&aelig;
