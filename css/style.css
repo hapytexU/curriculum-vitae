@@ -12,3 +12,25 @@ body {
     overflow-x: hidden;
     font-weight: 300;
 }
+
+.container {
+    width: 100%;
+    position: relative;
+}
+
+.cv-leaflet {
+	width: 33%;
+	height: 700px;
+	max-width: 370px;
+	margin: 0 auto 40px auto;
+	position: relative;
+	-webkit-perspective: 1600px;
+	perspective: 1600px;
+	color: #2a323f;
+}
+
+.cv-page {
+  background: #fff url(/assets/paper.jpg);
+  background-origin: border-box;
+}
+
