@@ -278,6 +278,12 @@ a.cv-button-open:hover {
   text-align: left;
 }
 
+.coffee {
+  position:absolute;
+  bottom:0;
+  right:0;
+}
+
 .cv-order p{
 	padding: 10px;
 	background: rgba(213, 193, 154, 0.2);
