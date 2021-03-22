@@ -3,7 +3,7 @@ var Curriculum = (function() {
 		$cover = $container.find( 'div.cv-cover' ),
     $coverclick = $cover.find('.cv-overlay'),
     $coverfront = $cover.find('.cv-front'),
-    $covercontent = $coverfront.find('.cv-content'),
+    $covercontent = $cover.find('.cv-openclose'),
 		$middle = $container.find( 'div.cv-middle' ),
 		$right = $container.find( 'div.cv-right' ),
 		$open = $cover.find('a.cv-button-open'),
@@ -19,7 +19,7 @@ var Curriculum = (function() {
 		initEvents = function() {
 			$covercontent.on( 'click', function( event ) {
         var target = event.target ? event.target : event.srcElement;
-        if(target.id == 'cv-frontopen') {
+        if(target.id == 'cv-frontopen' || target.id == 'cv-frontclose') {
           if($container.hasClass('cv-open')) {
             closeMenu();
           } else {
