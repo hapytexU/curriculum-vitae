@@ -33,6 +33,7 @@ body {
 
 blockquote.blockquote {
   font-size:11pt;
+  text-justify: inter-word;
 }
 
 @font-face {
@@ -264,7 +265,9 @@ a.cv-button-open:hover {
 
 .cv-content dl dt {
 	font-weight: 500;
-	text-transform: uppercase;
+  font-style: bold;
+  color: #000000;
+	/* text-transform: uppercase;*/
 }
 
 .cv-content dl dd {
@@ -282,7 +285,7 @@ a.cv-button-open:hover {
 
 a.cv-viewdetails:before{
 	font-family: 'entypo-selected';
-	content: '\56';
+  content: '\21a5';
 	font-style: normal;
 	font-weight: normal;
 	speak: none;
@@ -349,7 +352,7 @@ a.cv-viewdetails:before{
 
 a.cv-viewdetails,
 .cv-modal a {
-	color: #e6b741;
+	color: #000000;
 	font-weight: 500;
 }
 
