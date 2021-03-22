@@ -282,6 +282,7 @@ a.cv-button-open:hover {
   position:absolute;
   bottom:0;
   right:0;
+  z-index: -20000;
 }
 
 .cv-order p{
