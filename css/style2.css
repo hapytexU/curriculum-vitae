@@ -23,12 +23,11 @@ body {
 }
 
 .blockquote:before {
-  font-family: 'FontAwesome';
-  content:"\f10d";
+  content:"\201c";
   font-size: 32pt;
-  position: absolute;
+  position: inline-block;
   left: 14pt;
-  color: rgba(0,0,0,0.1);
+  color: #c0c0c0; /*rgba(0,0,0,0.1)*/;
 }
 
 blockquote.blockquote {
@@ -291,11 +290,19 @@ a.cv-button-open:hover {
 }
 
 a.cv-viewdetails:before{
-  font-family: FontAwesome "Font Awesome 5 Brands";
+  font-family: "Font Awesome 5 Free";
   display: inline-block;
   padding-right: 6px;
   vertical-align: middle;
   content: '\f05a';
+  font-style: normal;
+  font-size: 13px;
+  font-weight: 900;
+  font-variant: normal;
+  text-rendering: auto;
+  line-height: 1;
+  margin-left: 0.2cm;
+  margin-right: 0.1cm;
 }
 
 .cv-modal {
@@ -413,6 +420,17 @@ a.cv-viewdetails,
   line-height: 1;
   margin-left: 0.2cm;
   margin-right: 0.1cm;
+}
+
+.skillwrap {
+  /*border: 1px solid #000 !important*/;
+  width: 60px;
+  background-color: #c0c0c0;
+}
+
+.skillitem {
+  background-color: #666;
+  height: 6px;
 }
 
 .cv-modal a {
