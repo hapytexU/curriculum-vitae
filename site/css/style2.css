@@ -291,7 +291,7 @@ a.cv-button-open:hover {
 }
 
 a.cv-viewdetails:before{
-  font-family: FontAwesome;
+  font-family: FontAwesome "Font Awesome 5 Brands";
   display: inline-block;
   padding-right: 6px;
   vertical-align: middle;
