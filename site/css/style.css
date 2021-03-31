@@ -16,6 +16,21 @@ body {
     font-weight: 300;
 }
 
+.skillcolumn {
+  float: left;
+  width: 33.33%;
+}
+
+.skillrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.skill {
+  margin-bottom: 3mm;
+}
+
 .container {
   width: 100%;
   position: relative;
