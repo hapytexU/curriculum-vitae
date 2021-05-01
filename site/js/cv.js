@@ -22,11 +22,9 @@ var Curriculum = (function() {
         var target = event.target ? event.target : event.srcElement;
         if(target.id == 'cv-frontopen' || target.id == 'cv-frontclose') {
           if($container.hasClass('cv-open')) {
-            window.location.hash = "#closed";
-            // closeMenu();
+            window.location.hash = "";
           } else {
             window.location.hash = "#open";
-            // openMenu();
           }
   				return false;
         }
@@ -37,7 +35,7 @@ var Curriculum = (function() {
           // unflipMenu();
           window.location.hash = "#open";
         } else {
-  				flipMenu();
+  				// flipMenu();
           window.location.hash = "#flounce";
         }
 				return false;
@@ -117,6 +115,7 @@ var Curriculum = (function() {
         unflipMenu();
         openMenu();
       } else if(hash == "#flounce") {
+        openMenu();
         flipMenu();
       }else {
         unflipMenu();
