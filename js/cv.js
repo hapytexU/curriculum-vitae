@@ -14,6 +14,7 @@ var Curriculum = (function() {
 		init = function() {
 
 			initEvents();
+      readHash();
 
 		},
 		initEvents = function() {
@@ -21,9 +22,9 @@ var Curriculum = (function() {
         var target = event.target ? event.target : event.srcElement;
         if(target.id == 'cv-frontopen' || target.id == 'cv-frontclose') {
           if($container.hasClass('cv-open')) {
-            closeMenu();
+            window.location.hash = "";
           } else {
-            openMenu();
+            window.location.hash = "#open";
           }
   				return false;
         }
@@ -31,9 +32,11 @@ var Curriculum = (function() {
 
 			$right.on( 'click', function( event ) {
         if($container.hasClass('cv-flip')) {
-          unflipMenu();
+          // unflipMenu();
+          window.location.hash = "#open";
         } else {
-  				flipMenu();
+  				// flipMenu();
+          window.location.hash = "#flounce";
         }
 				return false;
 
@@ -74,7 +77,6 @@ var Curriculum = (function() {
 		},
 
 		closeMenu = function() {
-
 			$container.removeClass( 'cv-open cv-nodelay cv-in cv-close' );
 
 		},
@@ -104,8 +106,23 @@ var Curriculum = (function() {
 			
 			}, 0 );
 
-		};
+		},
+    readHash = function () {
+      var hash = window.location.hash;
+      console.log("read Hash");
+      console.log(hash);
+      if(hash == "#open") {
+        unflipMenu();
+        openMenu();
+      } else if(hash == "#flounce") {
+        openMenu();
+        flipMenu();
+      }else {
+        unflipMenu();
+        closeMenu();
+      }
+    };
 
-	return { init : init };
+	return { init : init, readHash: readHash };
 
 })();
