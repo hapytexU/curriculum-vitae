@@ -298,6 +298,13 @@ a.cv-button-open:hover {
   z-index: -20000;
 }
 
+.qrcode {
+  bottom:20px;
+  right:20px;
+  position: absolute;
+}
+
+
 .cv-order p{
 	padding: 10px;
 	background: rgba(213, 193, 154, 0.2);
