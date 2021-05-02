@@ -464,13 +464,13 @@ a.cv-viewdetails,
 }
 
 .tags {
-  color: #000;
+  color: #666;
 }
 
 .tags:before {
   content: "\f02c  ";
   font-family: "Font Awesome 5 Free";
-  color: #000;
+  color: #666;
   display: inline-block;
   font-style: normal;
   font-size: 13px;
