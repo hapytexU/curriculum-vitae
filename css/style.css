@@ -216,8 +216,8 @@ a.cv-button-open,
 }
 
 .cv-content h2 {
-	letter-spacing: 2px;
-	font-size: 26px;
+	/*letter-spacing: 2px; */
+	font-size: 24px;
   opacity: 85%;
 	/* text-shadow: 1px 1px 0 #ffffff, 3px 3px 0 #c9f0dd;*/
 }
