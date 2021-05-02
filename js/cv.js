@@ -109,8 +109,6 @@ var Curriculum = (function() {
 		},
     readHash = function () {
       var hash = window.location.hash;
-      console.log("read Hash");
-      console.log(hash);
       if(hash == "#open") {
         unflipMenu();
         openMenu();
