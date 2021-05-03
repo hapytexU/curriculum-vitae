@@ -85,9 +85,13 @@ blockquote.blockquote {
   background-origin: border-box;
 }
 
-.cv-page > div > div dt {
+.cv-page > div > div dt.activity {
   text-align: left;
   margin-left: 20%;
+}
+
+
+.cv-page > div > div dt {
 }
 
 .cv-page,
