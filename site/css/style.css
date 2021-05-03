@@ -300,9 +300,26 @@ a.cv-button-open:hover {
 
 .qrcode {
   bottom:20px;
+  left:20px;
+  position: absolute;
+}
+
+.prev-next {
+  font-size: 18px;
+}
+
+.page-next {
+  bottom:20px;
   right:20px;
   position: absolute;
 }
+
+.page-prev {
+  bottom:20px;
+  left:20px;
+  position: absolute;
+}
+
 
 
 .cv-order p{
