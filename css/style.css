@@ -11,7 +11,7 @@ body {
     font-size: 13px;
     background: #fff url(/assets/background.jpg);
     -webkit-font-smoothing: antialiased;
-    overflow-y: scroll;
+    overflow-y: auto;
     overflow-x: hidden;
     font-weight: 300;
 }
@@ -34,20 +34,23 @@ body {
 .container {
   width: 100%;
   position: relative;
-  margin-top: 80px;
+  margin-top: 50px;
 }
 
 .blockquote:before {
   content:"\201c";
-  font-size: 32pt;
-  position: inline-block;
-  left: 14pt;
+  font-size: 48pt;
+  position: relative;
+  left: -14pt;
+  top: 10pt;
   color: #c0c0c0; /*rgba(0,0,0,0.1)*/;
 }
 
 blockquote.blockquote {
-  font-size:11pt;
+  font-size:10pt;
   text-justify: inter-word;
+  line-height: 10pt;
+  width: 80%;
 }
 
 @font-face {
@@ -241,7 +244,7 @@ a.cv-button-open,
 }
 
 .cv-content h4 {
-	margin: 0 0 20px 0;
+	margin: 10px 0 20px 0;
 	font-size: 16px;
 	padding-bottom: 10px;
 	color: #323b4c;
@@ -297,7 +300,7 @@ a.cv-button-open:hover {
 }
 
 .coffee {
-  position:absolute;
+  position:fixed;
   bottom:5px;
   right:5px;
   z-index: -20000;
@@ -306,7 +309,10 @@ a.cv-button-open:hover {
 .qrcode {
   bottom:20px;
   left:20px;
-  position: absolute;
+  top: 100%;
+  position: sticky;
+  text-align: left;
+  vertical-align: bottom;
 }
 
 .page-prev.bounce:hover {
@@ -335,6 +341,7 @@ a.cv-button-open:hover {
 
 
 div.prev-next {
+  position: relative;
   bottom: 25px;
   transition-timing-function: ease-in-out;
 }
@@ -402,6 +409,11 @@ a.cv-viewdetails:before{
 	pointer-events: none;
 	-webkit-transform: translateZ(1000px);
 	transform: translateZ(1000px);
+}
+
+h5.subtext {
+  font-size: 24px;
+  margin-bottom: 5px;
 }
 
 .cv-modal h5 {
