@@ -36,7 +36,7 @@ var Curriculum = (function() {
           window.location.hash = "#open";
         } else {
   				// flipMenu();
-          window.location.hash = "#flounce";
+          window.location.hash = "#flipped";
         }
 				return false;
 
@@ -112,7 +112,7 @@ var Curriculum = (function() {
       if(hash == "#open") {
         unflipMenu();
         openMenu();
-      } else if(hash == "#flounce") {
+      } else if(hash == "#flipped") {
         openMenu();
         flipMenu();
       }else {

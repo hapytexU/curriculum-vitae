@@ -300,9 +300,26 @@ a.cv-button-open:hover {
 
 .qrcode {
   bottom:20px;
+  left:20px;
+  position: absolute;
+}
+
+.prev-next {
+  font-size: 18px;
+}
+
+.page-next {
+  bottom:20px;
   right:20px;
   position: absolute;
 }
+
+.page-prev {
+  bottom:20px;
+  left:20px;
+  position: absolute;
+}
+
 
 
 .cv-order p{
@@ -388,6 +405,7 @@ a.cv-viewdetails,
 .firm:before {
   content: "\f1ad ";
   font-family: "Font Awesome 5 Free";
+  cursor: help;
   color: #000;
   display: inline-block;
   font-style: normal;
@@ -407,6 +425,7 @@ a.cv-viewdetails,
 
 .univ:before {
   content: "\f19c ";
+  cursor: help;
   font-family: "Font Awesome 5 Free";
   color: #000;
   display: inline-block;
@@ -433,6 +452,7 @@ a.cv-viewdetails,
   content: "\f3c5  ";
   font-family: "Font Awesome 5 Free";
   color: #666;
+  cursor: help;
   display: inline-block;
   font-style: normal;
   font-size: 13px;
@@ -451,6 +471,7 @@ a.cv-viewdetails,
 .duration:before {
   content: "\f073  ";
   font-family: "Font Awesome 5 Free";
+  cursor: help;
   color: #000;
   display: inline-block;
   font-style: normal;
@@ -471,6 +492,7 @@ a.cv-viewdetails,
   content: "\f02c  ";
   font-family: "Font Awesome 5 Free";
   color: #666;
+  cursor: help;
   display: inline-block;
   font-style: normal;
   font-size: 13px;
@@ -480,6 +502,10 @@ a.cv-viewdetails,
   line-height: 1;
   margin-left: 0.2cm;
   margin-right: 0.1cm;
+}
+
+ul {
+  list-style-type: none;
 }
 
 .skillwrap {
