@@ -11,7 +11,7 @@ body {
     font-size: 13px;
     background: #fff url(/assets/background.jpg);
     -webkit-font-smoothing: antialiased;
-    overflow-y: auto;
+    overflow-y: hidden;
     overflow-x: hidden;
     font-weight: 300;
 }
@@ -879,6 +879,9 @@ a.rm-button-open,
 }
 
 @media screen and (max-width: 960px) {
+  body {
+    overflow-y: auto;
+  }
 	.cv-leaflet {
 		width: 100%;
 		height: auto;
