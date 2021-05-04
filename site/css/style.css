@@ -449,7 +449,7 @@ h5.subtext {
 
 a, a:hover, a:focus, a:active {
 	color: #000000;
-	font-weight: bold;
+	font-weight: normal;
   text-decoration: none;
   text-align: left;
 }
