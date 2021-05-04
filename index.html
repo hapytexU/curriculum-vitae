@@ -1,26 +1,27 @@
 <!doctype html>
 <html lang="en">
-  <title>Curriculum Vit&aelig; &lsaquo; Willem Van Onsem</title>
-  <meta name="author" content="Willem Van Onsem" />
-  <meta name="description" content="Willem Van Onsem's Curriculum Vit&aelig;" />
-  <meta name="keywords" content="Curriculum Vitae, cv, Willem Van Onsem, programmer, developer, software" />
-  <meta content="text/html;charset=utf-8" http-equiv="Content-Type" />
-  <meta property="og:title" content="Willem Van Onsem's Curriculum Vit&aelig;" />
-  <meta property="og:type" content="profile" />
-  <meta property="og:url" content="https://curriculum-vitae.django-antipatterns.com/" />
-  <meta property="og:locale" content="en_GB" />
-  <meta property="og:locale:alternate" content="en_US" />
-  <meta property="og:image" content="/assets/me.jpg" />
-  <meta property="og:image:width" content="100">
-  <meta property="og:image:height" content="100">
-  <meta property="profile:first_name" content="Willem" />
-  <meta property="profile:last_name" content="Van Onsem" />
-  <meta property="profile:username" content="KommuSoft" />
-  <meta property="profile:gender" content="male" />
-  <meta content="utf-8" http-equiv="encoding" />
-  <link rel="stylesheet" type="text/css" href="/css/style.css" />
-  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-  <link rel="shortcut icon" href="/favicon.ico"> 
+  <head>
+    <title>Curriculum Vit&aelig; &lsaquo; Willem Van Onsem</title>
+    <meta name="author" content="Willem Van Onsem" />
+    <meta name="description" content="Willem Van Onsem's Curriculum Vit&aelig;" />
+    <meta name="keywords" content="Curriculum Vitae, cv, Willem Van Onsem, programmer, developer, software" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <meta property="og:title" content="Willem Van Onsem's Curriculum Vit&aelig;" />
+    <meta property="og:type" content="profile" />
+    <meta property="og:url" content="https://curriculum-vitae.django-antipatterns.com/" />
+    <meta property="og:locale" content="en_GB" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:image" content="/assets/me.jpg" />
+    <meta property="og:image:width" content="100">
+    <meta property="og:image:height" content="100">
+    <meta property="profile:first_name" content="Willem" />
+    <meta property="profile:last_name" content="Van Onsem" />
+    <meta property="profile:username" content="KommuSoft" />
+    <meta property="profile:gender" content="male" />
+    <link rel="stylesheet" type="text/css" href="/css/style.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+    <link rel="shortcut icon" href="/favicon.ico">
+  </head>
   <body>
     <noscript>
       <div class="alert" role="alert">
@@ -38,16 +39,15 @@
                 <div class="cv-logo"></div>
                 <h2>Willem Van Onsem</h2>
                   <a href="mailto:&#118;&#097;&#110;&#111;&#110;&#115;&#101;&#109;&#046;&#119;&#105;&#108;&#108;&#101;&#109;+&#099;&#117;&#114;&#114;&#105;&#099;&#117;&#108;&#117;&#109;&#045;&#118;&#105;&#116;&#097;&#101;&#064;&#103;&#109;&#097;&#105;&#108;&#046;&#099;&#111;&#109;?subject=curriculum%20vit%C3%A6"><i class="far fa-envelope"></i></a>
-                  <a href="https://github.com/KommuSoft"><i class="fab fa-github"></i></a>
-                  <a href="https://stackoverflow.com/users/67579/willem-van-onsem"><i class="fab fa-stack-overflow"></i></a>
-                  <a href="https://www.linkedin.com/in/wvanonsem/"><i class="fab fa-linkedin"></i></a>
-                  <a href="https://www.django-antipatterns.com/"><i class="fas fa-link"></i></a>
+                  <a target="_blank" href="https://github.com/KommuSoft"><i class="fab fa-github"></i></a>
+                  <a target="_blank" href="https://stackoverflow.com/users/67579/willem-van-onsem"><i class="fab fa-stack-overflow"></i></a>
+                  <a target="_blank" href="https://www.linkedin.com/in/wvanonsem/"><i class="fab fa-linkedin"></i></a>
+                  <a target="_blank" href="https://www.django-antipatterns.com/"><i class="fas fa-link"></i></a>
 
                 <blockquote class="blockquote">A software developer interested in <i>functional programming</i> and Web Development with <i>Yesod</i> and <i>Django</i>.</blockquote>
-                <!--<img src="/assets/qr.png">-->
                 <div class="cv-info">
                   <div class="qrcode">
-                    <img loading="lazy" src="/assets/qr.png">
+                    <img alt="qr code that links to this webpage" loading="lazy" src="/assets/qr.png">
                   </div>
                   <div class="prev-next page-next bounce"><a href="#open">open <i class="fas fa-lock-open"></i></a></div>
                 </div>
@@ -200,14 +200,14 @@
           </div>
           <div class="cv-right">
             <div class="cv-front">
-              <div class="cv-content">
+              <div class="cv-content" id="cv-rightclose">
                 <h4><i class="fab fa-github"></i> Open source</h4>
 
                 <div class="prev-next page-prev bounce"><a href="#flipped">&#x25c1; previous page</a></div>
               </div>
             </div>
             <div class="cv-back">
-              <div class="cv-content">
+              <div class="cv-content" id="cv-rightopen">
                 <h4><i class="fas fa-trophy"></i> Awards</h4>
                 <dl>
                   <dt>Flemish Programming Contest</dt>
@@ -237,7 +237,7 @@
                 <h4><i class="fab fa-github"></i> Open Source</h4>
                 <div class="prev-next page-next bounce"><a href="#flipped">next page &#x25b6;</a></div>
                 Mainly contributions to the <i>Haskell</i> ecosystem. Some utility packages are published on
-                <a href="https://hackage.haskell.org/user/wvanonsem90"><i>Hackage</i></a>.
+                <a target="_blank" href="https://hackage.haskell.org/user/wvanonsem90"><i><i class="fas fa-external-link-alt"></i> Hackage</i></a>.
               </div>
             </div>
           </div>
@@ -246,10 +246,10 @@
     </div>
     <div class="coffee">
       <!-- stuff -->
-      <img loading="lazy" src="/assets/coffee.svg" width="246" height="244">
+      <img alt="A cup of coffee" loading="lazy" src="/assets/coffee.svg" width="246" height="244">
     </div>
-    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
-    <script type="text/javascript" src="/js/cv.js"></script>
-    <script type="text/javascript">$(function() {Curriculum.init(); window.onhashchange = Curriculum.readHash;});</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+    <script src="/js/cv.js"></script>
+    <script>$(function() {Curriculum.init(); window.onhashchange = Curriculum.readHash;});</script>
   </body>
 </html>

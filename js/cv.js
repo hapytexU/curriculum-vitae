@@ -31,15 +31,17 @@ var Curriculum = (function() {
 			} );
 
 			$right.on( 'click', function( event ) {
-        if($container.hasClass('cv-flip')) {
-          // unflipMenu();
-          window.location.hash = "#open";
-        } else {
-  				// flipMenu();
-          window.location.hash = "#flipped";
+        var target = event.target ? event.target : event.srcElement;
+        if(target.id == 'cv-rightopen' || target.id == 'cv-rightclose') {
+          if($container.hasClass('cv-flip')) {
+            // unflipMenu();
+            window.location.hash = "#open";
+          } else {
+  			  	// flipMenu();
+            window.location.hash = "#flipped";
+          }
+				  return false;
         }
-				return false;
-
 			} );
 
 
