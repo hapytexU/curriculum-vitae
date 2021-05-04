@@ -891,6 +891,9 @@ a.rm-button-open,
   body {
     overflow-y: auto;
   }
+  div.prev-next {
+    display: none;
+  }
 	.cv-leaflet {
 		width: 100%;
 		height: auto;

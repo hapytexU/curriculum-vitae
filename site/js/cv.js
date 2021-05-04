@@ -111,15 +111,17 @@ var Curriculum = (function() {
 		},
     readHash = function () {
       var hash = window.location.hash;
-      if(hash == "#open") {
+      if(hash === "#" || hash === "") {
+        // closed
         unflipMenu();
-        openMenu();
+        closeMenu();
       } else if(hash == "#flipped") {
         openMenu();
         flipMenu();
       }else {
+        // open
         unflipMenu();
-        closeMenu();
+        openMenu();
       }
     };
 
