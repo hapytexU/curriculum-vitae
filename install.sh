@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt-get install yui-compressor
+sudo apt-get install yui-compressor minify
