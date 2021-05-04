@@ -10,8 +10,8 @@ dirs: $(dirs)
 out_/%.html: site/%.html
 	minify "$<" -o "$@"
 
-#out_/%.css: site/%.css
-#	yui-compressor -o "$@" "$<"
+out_/%.css: site/%.css
+	minify "$<" -o "$@"
 
 out_/%.js: site/%.js
 	yui-compressor -o "$@" "$<"

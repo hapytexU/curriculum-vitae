@@ -42,8 +42,9 @@ body {
   font-size: 48pt;
   position: relative;
   left: -14pt;
-  top: 10pt;
-  color: #c0c0c0; /*rgba(0,0,0,0.1)*/;
+  top: 20pt;
+  color: #daa520;
+  /*color: #c0c0c0; rgba(0,0,0,0.1)*/;
 }
 
 blockquote.blockquote {
@@ -464,7 +465,6 @@ a.cv-viewdetails,
 .firm:before {
   content: "\f1ad ";
   font-family: "Font Awesome 5 Free";
-  cursor: help;
   color: #000;
   display: inline-block;
   font-style: normal;
@@ -484,7 +484,6 @@ a.cv-viewdetails,
 
 .univ:before {
   content: "\f19c ";
-  cursor: help;
   font-family: "Font Awesome 5 Free";
   color: #000;
   display: inline-block;
@@ -511,7 +510,6 @@ a.cv-viewdetails,
   content: "\f3c5  ";
   font-family: "Font Awesome 5 Free";
   color: #666;
-  cursor: help;
   display: inline-block;
   font-style: normal;
   font-size: 13px;
@@ -530,7 +528,6 @@ a.cv-viewdetails,
 .duration:before {
   content: "\f073  ";
   font-family: "Font Awesome 5 Free";
-  cursor: help;
   color: #000;
   display: inline-block;
   font-style: normal;
@@ -551,7 +548,6 @@ a.cv-viewdetails,
   content: "\f02c  ";
   font-family: "Font Awesome 5 Free";
   color: #666;
-  cursor: help;
   display: inline-block;
   font-style: normal;
   font-size: 13px;
@@ -572,7 +568,6 @@ a.cv-viewdetails,
   content: "\f559  ";
   font-family: "Font Awesome 5 Free";
   color: #666;
-  cursor: help;
   display: inline-block;
   font-style: normal;
   font-size: 13px;
