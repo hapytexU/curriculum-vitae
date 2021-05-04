@@ -13,6 +13,9 @@ out_/%.html: site/%.html
 out_/%.css: site/%.css
 	minify "$<" -o "$@"
 
+out_/%.svg: site/%.svg
+	scour "$<" > "$@"
+
 out_/%.js: site/%.js
 	yui-compressor -o "$@" "$<"
 

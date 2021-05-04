@@ -305,9 +305,9 @@ a.cv-button-open:hover {
 }
 
 .coffee {
-  position:fixed;
-  bottom:5px;
-  right:5px;
+  position:absolute;
+  bottom:0px;
+  right:-2px;
   z-index: -20000;
 }
 
