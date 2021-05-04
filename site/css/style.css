@@ -446,6 +446,13 @@ h5.subtext {
 	font-family: Arial, sans-serif;
 }
 
+a, a:hover, a:focus, a:active {
+	color: #000000;
+	font-weight: bold;
+  text-decoration: none;
+  text-align: left;
+}
+
 a.cv-viewdetails,
 .cv-modal a {
 	color: #000000;
