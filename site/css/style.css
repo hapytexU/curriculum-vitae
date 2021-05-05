@@ -5,7 +5,13 @@
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
+  overflow-anchor: none;
 }
+
+.activity {
+  overflow-anchor: none;
+}
+
 body {
     font-family: 'Raleway', 'Arial', sans-serif;
     font-size: 13px;
@@ -14,6 +20,7 @@ body {
     overflow-y: hidden;
     overflow-x: hidden;
     font-weight: 300;
+    overflow-anchor: none;
 }
 
 .skillcolumn {
@@ -38,8 +45,13 @@ body {
 }
 
 .blockquote:before {
-  content:"\201c";
-  font-size: 48pt;
+  position: absolute;
+  content: open-quote;
+  font-size: 4em;
+  margin-left: -0.6em;
+  margin-top: 0.0em;
+  color: #daa520;
+  /* font-size: 48pt;
   position: relative;
   left: -14pt;
   top: 20pt;
@@ -49,9 +61,10 @@ body {
 
 blockquote.blockquote {
   font-size:10pt;
+  text-align: justify;
   text-justify: inter-word;
   line-height: 10pt;
-  width: 80%;
+  width: 60%;
 }
 
 @font-face {
@@ -290,7 +303,8 @@ a.cv-button-open:hover {
 	margin: 0;
 }
 
-.cv-content dl dt {
+.cv-content dl dt,
+.cv-content dt dt a.extlink.extlink {
 	font-weight: bold;
   color: #000000;
 	/* text-transform: uppercase;*/
@@ -303,6 +317,20 @@ a.cv-button-open:hover {
 	color: #333;
   text-align: left;
 }
+
+.cv-content dl dt:target a,
+dt:target + dd a,
+dt:target + dd .tags,
+dt:target + dd .duration,
+dt:target + dd .grade {
+  color: #b8860b; /* dark goldenrod */
+}
+
+.cv-content dl dt a:hover {
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
+}
+
 
 .coffee {
   position:absolute;
@@ -449,7 +477,7 @@ h5.subtext {
 
 a, a:hover, a:focus, a:active {
 	color: #000000;
-	font-weight: normal;
+	/* font-weight: normal; */
   text-decoration: none;
   text-align: left;
 }
@@ -465,7 +493,7 @@ a.cv-viewdetails,
 .firm:before {
   content: "\f1ad ";
   font-family: "Font Awesome 5 Free";
-  color: #000;
+  /*color: #000;*/
   display: inline-block;
   font-style: normal;
   font-size: 13px;
@@ -485,7 +513,7 @@ a.cv-viewdetails,
 .univ:before {
   content: "\f19c ";
   font-family: "Font Awesome 5 Free";
-  color: #000;
+  /*color: #000;*/
   display: inline-block;
   font-style: normal;
   font-size: 13px;
@@ -509,7 +537,7 @@ a.cv-viewdetails,
 .location:before {
   content: "\f3c5  ";
   font-family: "Font Awesome 5 Free";
-  color: #666;
+  /*color: #666;*/
   display: inline-block;
   font-style: normal;
   font-size: 13px;
@@ -528,7 +556,7 @@ a.cv-viewdetails,
 .duration:before {
   content: "\f073  ";
   font-family: "Font Awesome 5 Free";
-  color: #000;
+  /*color: #000;*/
   display: inline-block;
   font-style: normal;
   font-size: 13px;
@@ -547,7 +575,7 @@ a.cv-viewdetails,
 .tags:before {
   content: "\f02c  ";
   font-family: "Font Awesome 5 Free";
-  color: #666;
+  /*color: #666;*/
   display: inline-block;
   font-style: normal;
   font-size: 13px;
@@ -567,7 +595,7 @@ a.cv-viewdetails,
 .grade:before {
   content: "\f559  ";
   font-family: "Font Awesome 5 Free";
-  color: #666;
+  /*color: #666;*/
   display: inline-block;
   font-style: normal;
   font-size: 13px;
@@ -617,6 +645,8 @@ ul.nobullet {
 a.cv-viewdetails:hover,
 .cv-modal a:hover {
 	color: #000;
+  text-decoration-line: underline;
+  text-decoration-style: dashed;
 }
 
 .cv-close {

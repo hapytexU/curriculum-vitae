@@ -54,9 +54,9 @@ var Curriculum = (function() {
 
 			$details.on( 'click', function( event ) {
 
-				$container.removeClass( 'rm-in' ).children( 'div.cv-modal' ).remove();
-				viewDetails( $( this ) );
-				return false;
+				// $container.removeClass( 'rm-in' ).children( 'div.cv-modal' ).remove();
+				// viewDetails( $( this ) );
+				// return false;
 
 			} );
 			
@@ -82,7 +82,7 @@ var Curriculum = (function() {
 			$container.removeClass( 'cv-open cv-nodelay cv-in cv-close' );
 
 		},
-		viewDetails = function(cvitem) {
+		/* viewDetails = function(cvitem) {
 
 			var title = recipe.text(),
 				img = recipe.data('thumb'),
@@ -108,8 +108,9 @@ var Curriculum = (function() {
 			
 			}, 0 );
 
-		},
+		},*/
     readHash = function () {
+      document.body.scrollTop = document.documentElement.scrollTop = 0;
       var hash = window.location.hash;
       if(hash === "#" || hash === "") {
         // closed
