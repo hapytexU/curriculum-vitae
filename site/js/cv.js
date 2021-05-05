@@ -11,10 +11,15 @@ var Curriculum = (function() {
 		$details = $container.find( 'a.cv-viewdetails' ),
     state = false,
 
-		init = function() {
+    moveCoffee = function () {
+      $('.coffee').removeClass('imgloading');
+    }
 
+		init = function() {
 			initEvents();
       readHash();
+      var coff = $('.coffee img')[0];
+      coff.addEventListener("load", moveCoffee);
 
 		},
 		initEvents = function() {

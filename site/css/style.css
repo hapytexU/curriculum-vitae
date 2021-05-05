@@ -332,12 +332,21 @@ dt:target + dd .grade {
 }
 
 
-.coffee {
+.coffee.imgloading {
   position:absolute;
-  bottom:0px;
-  right:-2px;
+  bottom:-35px;
+  right:-200px;
   z-index: -20000;
 }
+
+.coffee {
+  position:absolute;
+  bottom:-35px;
+  right:-2px;
+  z-index: -20000;
+  transition: right 2s;
+}
+
 
 .qrcode {
   bottom:20px;
@@ -417,6 +426,10 @@ a.cv-viewdetails:before{
   line-height: 1;
   margin-left: 0.2cm;
   margin-right: 0.1cm;
+}
+
+a.cv-viewdetails:before:hover {
+  color: #000060;
 }
 
 .cv-modal {
