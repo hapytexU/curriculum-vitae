@@ -17,8 +17,7 @@ out_/%.svg: site/%.svg
 	scour "$<" > "$@"
 
 out_/%.js: site/%.js
-	ln -f "$<" "$@"
-	# minify "$<" > "$@"
+	minify "$<" > "$@"
 
 out_/%: site/%
 	ln -f "$<" "$@"
