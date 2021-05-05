@@ -124,8 +124,21 @@ var Curriculum = (function() {
         unflipMenu();
         openMenu();
       }
+    },
+    fillSkills = function () {
+      console.log('FOOBAR');
+      $('div.skill').each(function () {
+        ths=$(this);
+        dv=ths.attr('data-val');
+        nw=$('<div class="skillwrap"></div>')
+        nw.append($('<div class="skillitem" style="width:'+ dv + '%;"></div>'));
+        ths.append(nw);
+        link=$('<a></a>').attr('href', "#" + ths.attr('id')).append(ths.attr('data-name'));
+
+        ths.append(link);
+      });
     };
 
-	return { init : init, readHash: readHash };
+	return { init : init, readHash: readHash, fillSkills: fillSkills };
 
 })();

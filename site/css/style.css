@@ -632,10 +632,24 @@ ul.nobullet {
   background-color: #c0c0c0;
 }
 
+div.skill:target a {
+  color: #daa520;
+}
+
+div.skill:target .skillwrap {
+  background-color: #eee8aa;
+}
+
+
 .skillitem {
   background-color: #666;
   height: 6px;
 }
+
+div.skill:target .skillwrap .skillitem {
+  background-color: #daa520;
+}
+
 
 .cv-modal a {
 	float: right;
