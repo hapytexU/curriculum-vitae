@@ -130,8 +130,25 @@ var Curriculum = (function() {
         openMenu();
       }
     },
+    makeSpan = function (name, cls) {
+      return $('<span></span>').addClass(cls).append(name);
+    },
+    makeFullLink = function (target, name, cls) {
+      return $('<a></a>').attr('href', target).attr('target', '_blank').addClass(cls).append(name);
+    },
+    descItem = function (that, firm, tags) {
+        var ths=$(that);
+        var frm=ths.attr('data-firm');
+        var frmurl=ths.attr('data-firm-href');
+        var loc=ths.attr('data-loc');
+        var locurl=ths.attr('data-loc-href');
+        ths.append(makeFullLink(frmurl, frm, firm));
+        ths.append(makeFullLink(locurl, loc, 'location'));
+        ths.append($('<br>'));
+        ths.append(makeSpan(ths.attr('data-duration'), 'duration'));
+        ths.append(makeSpan(ths.attr('data-tags'), tags));
+    },
     fillData = function () {
-      console.log('FOOBAR');
       $('div.skill').each(function () {
         var ths=$(this);
         var dv=ths.attr('data-val');
@@ -142,8 +159,11 @@ var Curriculum = (function() {
         ths.append(link);
       });
       $('dd.workdesc').each(function () {
+        descItem(this, 'firm', 'tags');
       });
-/*<a href="https://www.transics.com/" target="_blank" class="firm">Transics International</a><a href="https://goo.gl/maps/5WzfVkvSVu1HF6YNA" target="_blank" class="location">Ypres</a><br><span class="duration">2018-&hellip;</span><span class="tags">C#, .NET, JavaScript</span>*/
+      $('dd.edudesc').each(function () {
+        descItem(this, 'univ', 'grade');
+      });
     };
 
 	return { init : init, readHash: readHash, fillData: fillData };

@@ -428,10 +428,6 @@ a.cv-viewdetails:before{
   margin-right: 0.1cm;
 }
 
-a.cv-viewdetails:before:hover {
-  color: #000060;
-}
-
 .cv-modal {
 	position: absolute;
 	z-index: 10000;
