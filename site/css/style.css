@@ -344,7 +344,7 @@ dt:target + dd .grade {
   bottom:-35px;
   right:-2px;
   z-index: -20000;
-  transition: right 2s;
+  transition: right 2s ease-in;
 }
 
 
