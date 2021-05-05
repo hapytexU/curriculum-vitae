@@ -59,7 +59,7 @@
                 <h4><i class="fas fa-briefcase"></i>&nbsp;Experience</h4>
                 <dl>
                     <dt class="activity" id="rd-software-engineer"><a href="#rd-software-engineer" class="cv-viewdetails" data-thumb="">R&amp;D Software Engineer</a></dt>
-                    <dd><a href="https://www.transics.com/" target="_blank" class="firm">Transics International</a><a href="https://goo.gl/maps/5WzfVkvSVu1HF6YNA" target="_blank" class="location">Ypres</a><br><span class="duration">2018-&hellip;</span><span class="tags">C#, .NET, JavaScript</span></dd>
+                    <dd class="workdesc" data-firm="Transics International" data-firm-href="https://www.transics.com/" data-location="Ypres" data-location-href="https://goo.gl/maps/5WzfVkvSVu1HF6YNA" data-duration="2018-&hellip;" data-tags="C#, .NET, JavaScript"></dd>
 
                     <dt class="activity" id="senior-python-developer"><a href="#senior-python-developer" class="cv-viewdetails" data-thumb="">Senior Python developer</a></dt>
                     <dd><a href="https://developers.nl/" target="_blank" class="firm">Developers.nl</a><a href="https://goo.gl/maps/PyagRHqtmrqXzg1T8" target="_blank" class="location">Rotterdam</a><br><span class="duration">2017-2018</span><span class="tags">Python, Django</span></dd>
@@ -252,10 +252,10 @@
       </div>
     </div>
     <div class="coffee imgloading">
-      <img alt="A cup of coffee" loading="lazy" src="/assets/coffee.svg" width="151" height="244">
+      <a href="https://www.buymeacoffee.com/hapytex" target="_blank"><img alt="A cup of coffee" loading="lazy" src="/assets/coffee.svg" width="151" height="244"></a>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="/js/cv.js"></script>
-    <script>$(function() {Curriculum.init(); Curriculum.fillSkills(); window.onhashchange = Curriculum.readHash;});</script>
+    <script>$(function() {Curriculum.init(); Curriculum.fillData(); window.onhashchange = Curriculum.readHash;});</script>
   </body>
 </html>

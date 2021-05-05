@@ -17,7 +17,8 @@ out_/%.svg: site/%.svg
 	scour "$<" > "$@"
 
 out_/%.js: site/%.js
-	yui-compressor -o "$@" "$<"
+	ln -f "$<" "$@"
+	# minify "$<" > "$@"
 
 out_/%: site/%
 	ln -f "$<" "$@"

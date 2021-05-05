@@ -130,20 +130,22 @@ var Curriculum = (function() {
         openMenu();
       }
     },
-    fillSkills = function () {
+    fillData = function () {
       console.log('FOOBAR');
       $('div.skill').each(function () {
-        ths=$(this);
-        dv=ths.attr('data-val');
-        nw=$('<div class="skillwrap"></div>')
+        var ths=$(this);
+        var dv=ths.attr('data-val');
+        var nw=$('<div class="skillwrap"></div>')
         nw.append($('<div class="skillitem" style="width:'+ dv + '%;"></div>'));
         ths.append(nw);
-        link=$('<a></a>').attr('href', "#" + ths.attr('id')).append(ths.attr('data-name'));
-
+        var link=$('<a></a>').attr('href', "#" + ths.attr('id')).append(ths.attr('data-name'));
         ths.append(link);
       });
+      $('dd.workdesc').each(function () {
+      });
+/*<a href="https://www.transics.com/" target="_blank" class="firm">Transics International</a><a href="https://goo.gl/maps/5WzfVkvSVu1HF6YNA" target="_blank" class="location">Ypres</a><br><span class="duration">2018-&hellip;</span><span class="tags">C#, .NET, JavaScript</span>*/
     };
 
-	return { init : init, readHash: readHash, fillSkills: fillSkills };
+	return { init : init, readHash: readHash, fillData: fillData };
 
 })();
