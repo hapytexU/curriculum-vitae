@@ -980,8 +980,20 @@ a.rm-button-open,
 }
 
 @media screen and (max-width: 960px) {
+  * {
+    overflow-anchor: auto;
+  }
+  .activity {
+    overflow-anchor: auto;
+  }
+
+  .opensource {
+    overflow-anchor: auto;
+  }
+
   body {
     overflow-y: auto;
+    overflow-anchor: auto;
   }
   div.prev-next {
     display: none;
