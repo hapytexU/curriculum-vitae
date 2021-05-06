@@ -68,7 +68,9 @@ blockquote.blockquote {
   text-align: justify;
   text-justify: inter-word;
   line-height: 10pt;
-  width: 60%;
+  margin-top: 4em;
+  margin-bottom: 4em;
+  width: 70%;
 }
 
 @font-face {
@@ -353,10 +355,11 @@ dt:target + dd .grade {
 }
 
 
-.qrcode {
+ .qrcode {
   bottom:20px;
   left:20px;
   top: 100%;
+  margin-top: 25px;
   position: sticky;
   text-align: center;
   vertical-align: bottom;

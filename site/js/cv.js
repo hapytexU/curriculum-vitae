@@ -129,6 +129,7 @@ var Curriculum = (function() {
         unflipMenu();
         openMenu();
       }
+      return false;
     },
     makeSpan = function (name, cls) {
       return $('<span></span>').addClass(cls).append(name);
