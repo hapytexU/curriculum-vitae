@@ -1,9 +1,16 @@
 BEGIN:VCARD
-VERSION:4.0
-PRODID:-//BBros.us llc//bvCard.com//EN
-N:Van Onsem;Willem;;;
-FN:Willem Van Onsem
-EMAIL:vanonsem.willem+curriculum-vitae@gmail.com
-URL;type=pref:https://www.django-antipatterns.com/
-ADR:;;;Ypres;;8900;Belgium
+VERSION:3.0
+FN;CHARSET=UTF-8:Willem Van Onsem
+N;CHARSET=UTF-8:Van Onsem;Willem;;;
+GENDER:M
+BDAY:19900629
+EMAIL;CHARSET=UTF-8;type=HOME,INTERNET:vanonsem.willem+curriculumvitae@gmail.com
+ADR;CHARSET=UTF-8;TYPE=HOME:;;;Ypres;West-Vlaanderen;8900;Belgium
+LABEL;CHARSET=UTF-8;TYPE=WORK:Transics International
+ADR;CHARSET=UTF-8;TYPE=WORK:;;Ter Waarde 91;Ypres;West-Vlaanderen;8900;Belgium
+TITLE;CHARSET=UTF-8:R&D Software engineer
+ORG;CHARSET=UTF-8:Transics International
+URL;CHARSET=UTF-8:https://curriculum-vitae.django-antipatterns.com/
+URL;type=WORK;CHARSET=UTF-8:https://www.transics.com/
+REV:2021-05-06T06:42:12.460Z
 END:VCARD
