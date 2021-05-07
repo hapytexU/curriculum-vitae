@@ -341,7 +341,7 @@ dt:target + dd .grade {
 
 .coffee.imgloading {
   position:absolute;
-  bottom:-35px;
+  bottom:-100px;
   right:-200px;
   z-index: -20000;
 }
