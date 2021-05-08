@@ -1,3 +1,21 @@
+const monthabbrev = [
+  'Jan.',
+  'Feb.',
+  'Mar.',
+  'Apr.',
+  'May',
+  'June',
+  'July',
+  'Aug.',
+  'Sep.',
+  'Oct.',
+  'Nov.',
+  'Dec.'
+];
+
+const yearAp = '&rsquo;';
+const durmid = '&#8211';
+
 var Curriculum = (function() {
 	var $container = $( '#cv-leaflet' ),
 		$cover = $container.find( 'div.cv-cover' ),
@@ -121,7 +139,7 @@ var Curriculum = (function() {
         // closed
         unflipMenu();
         closeMenu();
-      } else if(hash == "#flipped") {
+      } else if(hash.startsWith("#flipped")) {
         openMenu();
         flipMenu();
       }else {
@@ -134,6 +152,17 @@ var Curriculum = (function() {
     makeSpan = function (name, cls) {
       return $('<span></span>').addClass(cls).append(name);
     },
+    formatMonth = function(obj, pref) {
+        const frmyy=obj.attr('data-' + pref + '-yy');
+        const frmmm=obj.attr('data-' + pref + '-mm');
+        if(frmyy === undefined) {
+          return '&hellip;'
+        } else if(frmmm == undefined) {
+          return yearAp + frmyy;
+        } else {
+          return monthabbrev[parseInt(frmmm)-1] + ' ' + yearAp + frmyy;
+        }
+    },
     makeFullLink = function (target, name, cls) {
       return $('<a></a>').attr('href', target).attr('target', '_blank').addClass(cls).append(name);
     },
@@ -143,10 +172,12 @@ var Curriculum = (function() {
         var frmurl=ths.attr('data-firm-href');
         var loc=ths.attr('data-loc');
         var locurl=ths.attr('data-loc-href');
+        var dura = formatMonth(ths, 'from');
+        var durb = formatMonth(ths, 'to');
         ths.append(makeFullLink(frmurl, frm, firm));
         ths.append(makeFullLink(locurl, loc, 'location'));
         ths.append($('<br>'));
-        ths.append(makeSpan(ths.attr('data-duration'), 'duration'));
+        ths.append(makeSpan(dura + ' ' + durmid + ' ' + durb, 'duration'));
         ths.append(makeSpan(ths.attr('data-tags'), tags));
     },
     fillData = function () {

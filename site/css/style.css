@@ -1,6 +1,12 @@
 /* @import url('normalize.css'); */
 /* @import url('demo.css'); */
 
+:root {
+  --grd: #5c4306;
+  --gr: #b8860b;
+  --lgr: #daa520;
+}
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
@@ -54,7 +60,7 @@ body {
   font-size: 4em;
   margin-left: -0.6em;
   margin-top: 0.0em;
-  color: #daa520;
+  color: var(--gr);
   /* font-size: 48pt;
   position: relative;
   left: -14pt;
@@ -331,16 +337,28 @@ dt:hover + dd a,
 dt:hover + dd .tags,
 dt:hover + dd .duration,
 dt:hover + dd .grade,
+dt:hover + dd .firm,
+dt:hover + dd .univ,
+dt:hover + dd .location,
+dt:hover + dd .skillrow .skillcell a,
 dt:hover + dd .skillrow .skillcell {
-  color: #b8860b; /* dark goldenrod */
+  color: var(--grd);
 }
 
 dt:hover {
-  color: #daa520;
+  color: var(--grd);
 }
 
 dt:hover + dd {
-  color: #daa520;
+  color: var(--grd);
+}
+
+p:hover {
+  color: var(--grd);
+}
+
+p:hover a {
+  color: var(--grd);
 }
 
 dt:hover + dd .skillwrap {
@@ -350,7 +368,7 @@ dt:hover + dd .skillwrap {
 }
 
 dt:hover + dd a {
-  color: #daa520;
+  color: var(--gr);
 }
 
 dt:hover + dd .skillwrap {
@@ -358,7 +376,7 @@ dt:hover + dd .skillwrap {
 }
 
 dt:hover + dd .skill .skillwrap .skillitem {
-  background-color: #daa520;
+  background-color: var(--gr);
 }
 
 
@@ -710,10 +728,11 @@ ul.nobullet {
   /*border: 1px solid #000 !important*/;
   width: 60px;
   background-color: #c0c0c0;
+  cursor: hand;
 }
 
 div.skill:hover a {
-  color: #daa520;
+  color: var(--gr);
 }
 
 div.skill:hover .skillwrap {
@@ -724,10 +743,11 @@ div.skill:hover .skillwrap {
 .skillitem {
   background-color: #666;
   height: 6px;
+  cursor: hand;
 }
 
 div.skill:hover .skillwrap .skillitem {
-  background-color: #daa520;
+  background-color: var(--gr);
 }
 
 
