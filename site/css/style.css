@@ -68,8 +68,8 @@ blockquote.blockquote {
   text-align: justify;
   text-justify: inter-word;
   line-height: 10pt;
-  margin-top: 4em;
-  margin-bottom: 4em;
+  margin-top: 2em;
+  margin-bottom: 2em;
   width: 70%;
 }
 
@@ -325,13 +325,42 @@ a.cv-button-open:hover {
   text-align: left;
 }
 
-.cv-content dl dt:target a,
-dt:target + dd a,
-dt:target + dd .tags,
-dt:target + dd .duration,
-dt:target + dd .grade {
+.cv-content dt:hover,
+.cv-content dl dt:hover a,
+dt:hover + dd a,
+dt:hover + dd .tags,
+dt:hover + dd .duration,
+dt:hover + dd .grade,
+dt:hover + dd .skillrow .skillcell {
   color: #b8860b; /* dark goldenrod */
 }
+
+dt:hover {
+  color: #daa520;
+}
+
+dt:hover + dd {
+  color: #daa520;
+}
+
+dt:hover + dd .skillwrap {
+  /*border: 1px solid #000 !important*/;
+  width: 60px;
+  background-color: #c0c0c0;
+}
+
+dt:hover + dd a {
+  color: #daa520;
+}
+
+dt:hover + dd .skillwrap {
+  background-color: #eee8aa;
+}
+
+dt:hover + dd .skill .skillwrap .skillitem {
+  background-color: #daa520;
+}
+
 
 .cv-content dl dt a:hover {
   text-decoration-line: underline;
@@ -355,12 +384,12 @@ dt:target + dd .grade {
 }
 
 
- .qrcode {
-  bottom:20px;
+.qrcode {
+  /*bottom:20px;
   left:20px;
   top: 100%;
   margin-top: 25px;
-  position: sticky;
+  position: sticky; */
   text-align: center;
   vertical-align: bottom;
 }
@@ -683,11 +712,11 @@ ul.nobullet {
   background-color: #c0c0c0;
 }
 
-div.skill:target a {
+div.skill:hover a {
   color: #daa520;
 }
 
-div.skill:target .skillwrap {
+div.skill:hover .skillwrap {
   background-color: #eee8aa;
 }
 
@@ -697,7 +726,7 @@ div.skill:target .skillwrap {
   height: 6px;
 }
 
-div.skill:target .skillwrap .skillitem {
+div.skill:hover .skillwrap .skillitem {
   background-color: #daa520;
 }
 
@@ -1039,10 +1068,13 @@ a.rm-button-open,
 		background: transparent;
 	}
 
-	.cv-right .cv-front,
+	/*.cv-right .cv-front,*/
 	.cv-close {
 		display: none;
 	}
+  /*.cv-right .cv- {
+
+  }*/
 
 	.cv-button-open {
 		pointer-events: none;
