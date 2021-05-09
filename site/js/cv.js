@@ -80,8 +80,8 @@ var Curriculum = (function() {
 			$details.on( 'click', function( event ) {
 
 				// $container.removeClass( 'rm-in' ).children( 'div.cv-modal' ).remove();
-				// viewDetails( $( this ) );
-				// return false;
+				viewDetails($(this));
+				return false;
 
 			} );
 			
@@ -107,9 +107,14 @@ var Curriculum = (function() {
 			$container.removeClass( 'cv-open cv-nodelay cv-in cv-close' );
 
 		},
-		/* viewDetails = function(cvitem) {
+		viewDetails = function(cvitem) {
+      var title = cvitem.text();
+      $businesscard.empty();
+      // title = cvitem.attr('data-title');
+      toAdd = $('<h5>' + title + '</h5>');
+      $businesscard.append(toAdd);
 
-			var title = recipe.text(),
+			/* var title = recipe.text(),
 				img = recipe.data('thumb'),
 				description = recipe.parent().next().text(),
 				url = recipe.attr('href');
@@ -121,9 +126,10 @@ var Curriculum = (function() {
 			var h = $modal.outerHeight( true );
 			$modal.css( 'margin-top', -h / 2 );
 
-			setTimeout( function() {
+			setTimeout( function() {*/
 
-				$container.addClass( 'rm-in rm-nodelay' );
+				$container.addClass('cv-in' );
+      /*
 
 				$modal.find( 'span.cv-close-modal' ).on( 'click', function() {
 
@@ -131,9 +137,9 @@ var Curriculum = (function() {
 
 				} );
 			
-			}, 0 );
+			}, 0 ); */
 
-		},*/
+		},
     readHash = function () {
       document.body.scrollTop = document.documentElement.scrollTop = 0;
       var hash = window.location.hash;
