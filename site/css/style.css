@@ -310,6 +310,14 @@ a.cv-button-open:hover {
 	margin: 0;
 }
 
+.cv-in {
+  filter: blur(1px);
+}
+
+.cv-in #businesscard {
+  filter: initial;
+}
+
 .cv-content dl dt,
 .cv-content dl dd{
 	display: block;
@@ -388,14 +396,14 @@ dt:hover + dd .skill .skillwrap .skillitem {
 
 .coffee.imgloading {
   position:absolute;
-  bottom:-100px;
+  bottom:50px;
   right:-200px;
   z-index: -20000;
 }
 
 .coffee {
   position:absolute;
-  bottom:-35px;
+  bottom:100px;
   right:-2px;
   z-index: -20000;
   transition: right 2s ease-out;
@@ -486,22 +494,26 @@ a.cv-viewdetails:before{
 .cv-modal {
 	position: absolute;
 	z-index: 10000;
-	width: 120%;
-	margin-left: -10%;
-	top: 50%;
+	width: 36%;
+  height: 50%;
+	/*margin-left: -10%; */
+  left: 32%;
+  right: 32%;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
+	top: 25%;
 	padding: 40px;
   padding-color: #e6b641;
-	background: #fff url(../images/cardboard.png);
+	background: #fff url(/assets/paper.jpg);
   background-origin: border-box;
   background-repeat: repeat;
-	box-shadow: 
+	/*box-shadow: 
 		inset 0 0 0 16px #fff, 
 		inset 0 0 0 17px #e6b741, 
 		inset 0 0 0 18px #fff, 
 		inset 0 0 0 19px #e6b741, 
 		inset 0 0 0 20px #fff, 
 		inset 0 0 0 21px #e6b741,
-		0 4px 20px rgba(0,0,0,0.4);
+		0 4px 20px rgba(0,0,0,0.4);*/
 	opacity: 0;
 	pointer-events: none;
 	-webkit-transform: translateZ(1000px);
@@ -859,13 +871,13 @@ a.cv-viewdetails:hover,
 }
 
 .cv-leaflet.cv-in .cv-cover {
-	-webkit-transform: rotateY(-150deg);
-	transform: rotateY(-150deg);
+	-webkit-transform: rotateY(-170deg);
+	transform: rotateY(-170deg);
 }
 
 .cv-leaflet.cv-in .cv-right {
-	-webkit-transform: rotateY(150deg);
-	transform: rotateY(150deg);
+	-webkit-transform: rotateY(170deg);
+	transform: rotateY(170deg);
 }
 
 .cv-leaflet.cv-in .cv-page {
@@ -880,7 +892,7 @@ a.cv-viewdetails:hover,
 	transition-delay: 0s;
 }
 
-.cv-leaflet.cv-in .cv-modal {
+.cv-leaflet.cv-in +  .cv-modal {
 	-webkit-transform: translateZ(0px);
 	transform: translateZ(0px);
 	opacity: 1;
@@ -1116,12 +1128,12 @@ a.rm-button-open,
 		transition: opacity 0.6s ease-in-out 0s;
 	}
 
-	.cv-leaflet.cv-in .cv-cover,
+/*	.cv-leaflet.cv-in .cv-cover,
 	.cv-leaflet.cv-in .cv-right,
 	.cv-leaflet.cv-in .cv-page {
 		-webkit-transform: rotateY(0deg);
 		-webkit-transition-delay: 0s;
 		transform: rotateY(0deg);
 		transition-delay: 0s;
-	}
+	} */
 }

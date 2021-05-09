@@ -27,6 +27,7 @@ var Curriculum = (function() {
 		$open = $cover.find('a.cv-button-open'),
 		$close = $right.find('span.cv-close'),
 		$details = $container.find( 'a.cv-viewdetails' ),
+    $businesscard = $('#businesscard');
     state = false,
 
     moveCoffee = function () {
@@ -38,7 +39,6 @@ var Curriculum = (function() {
       readHash();
       var coff = $('.coffee img')[0];
       coff.addEventListener("load", moveCoffee);
-
 		},
 		initEvents = function() {
 			$covercontent.on( 'click', function( event ) {
@@ -67,7 +67,9 @@ var Curriculum = (function() {
         }
 			} );
 
-
+      $businesscard.find('.cv-close-modal').on('click', function () {
+        $container.removeClass('cv-in');
+      });
 			$close.on( 'click', function( event ) {
 
 				closeMenu();
