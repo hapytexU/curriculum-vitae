@@ -13,6 +13,21 @@ const monthabbrev = [
   'Dec.'
 ];
 
+const months = [
+  'January',
+  'February',
+  'March',
+  'April',
+  'May',
+  'June',
+  'July',
+  'August',
+  'September',
+  'October',
+  'November',
+  'December'
+];
+
 const yearAp = '&rsquo;';
 const durmid = '&#8211';
 
@@ -28,6 +43,9 @@ var Curriculum = (function() {
 		$close = $right.find('span.cv-close'),
 		$details = $container.find( 'a.cv-viewdetails' ),
     $businesscard = $('#businesscard');
+    $businesscardtitle = $('#businesscard-title');
+    $businesscardcontent = $('#businesscard-content');
+    $businesscardicon = $('#businesscard-icon');
     state = false,
 
     moveCoffee = function () {
@@ -108,11 +126,18 @@ var Curriculum = (function() {
 
 		},
 		viewDetails = function(cvitem) {
-      var title = cvitem.text();
-      $businesscard.empty();
+      var title = $('<i></i>').append(cvitem.text());
+      var datas = cvitem.parent().next();
+      var firm = $('<i></i>').append(datas.attr('data-firm'));
       // title = cvitem.attr('data-title');
-      toAdd = $('<h5>' + title + '</h5>');
-      $businesscard.append(toAdd);
+      $businesscardtitle.empty();
+      $businesscardtitle.append(title);
+      $businesscardtitle.append(' at ');
+      $businesscardtitle.append(firm);
+      $businesscardcontent.empty();
+      // $businesscardcontent.append(data.html());
+      $businesscardcontent.html(datas.find('.buz').html());
+      $businesscardicon.html(datas.find('.biz').html());
 
 			/* var title = recipe.text(),
 				img = recipe.data('thumb'),

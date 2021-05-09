@@ -228,13 +228,36 @@ blockquote.blockquote {
   cursor: default;
 }*/
 
+.buz {
+  display: hidden;
+}
+
+.biz {
+  display: hidden;
+}
+
+.buzicon {
+  height: 100%;
+  top: 50%;
+  text-align: center;
+  display: table-cell;
+  vertical-align: middle;
+  padding: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* img.biz {
+  width: 50%;
+  left: 25%;
+} */
+
 .cv-logo, 
 .cv-content h2,
 .cv-content h4,
 a.cv-button-open,
 .cv-modal h5 {
-	font-weight: 700;
-	text-transform: uppercase;
+	font-weight: 200;
 	font-family: 'Arvo', Arial, sans-serif;
 }
 
@@ -316,6 +339,10 @@ a.cv-button-open:hover {
 
 .cv-in #businesscard {
   filter: initial;
+}
+
+.businesscardcontent {
+  text-align: right;
 }
 
 .cv-content dl dt,
@@ -495,13 +522,13 @@ a.cv-viewdetails:before{
 	position: absolute;
 	z-index: 10000;
 	width: 36%;
-  height: 50%;
+  /*height: 50%; */
 	/*margin-left: -10%; */
   left: 32%;
   right: 32%;
   box-shadow: rgba(0, 0, 0, 0.2) 0px 10px 16px 0px, rgba(0, 0, 0, 0.19) 0px 6px 20px 0px;
 	top: 25%;
-	padding: 40px;
+	padding: 20px;
   padding-color: #e6b641;
 	background: #fff url(/assets/paper.jpg);
   background-origin: border-box;
@@ -528,12 +555,12 @@ h5.subtext {
 .cv-modal h5 {
 	margin: 0;
 	font-size: 20px;
-	text-shadow: 1px 1px 0 #fff, 2px 2px 0 #E6B741;
+	/*text-shadow: 1px 1px 0 #fff, 2px 2px 0 #E6B741;*/
 }
 
 .cv-modal .cv-thumb {
 	width: 100px;
-	height: 100px;
+	height: auto;
 	background-repeat: no-repeat;
 	background-position: center center;
 	float: left;
@@ -793,8 +820,8 @@ a.cv-viewdetails:hover,
 
 .cv-close-modal {
 	cursor: pointer;
-	right: 21px;
-	top: 21px;
+	right: 0px;
+	top: 0px;
 	display: block;
 	position: absolute;
 	width: 16px;
@@ -967,16 +994,6 @@ a.cv-viewdetails:hover,
 	transition-delay: 0s;
 }
 
-.cv-logo, 
-.rm-content h2,
-.rm-content h4,
-a.rm-button-open,
-.rm-modal h5 {
-	font-weight: 700;
-	text-transform: uppercase;
-	font-family: 'Arvo', Arial, sans-serif;
-}
-
 .cv-logo {
 	width: 100px;
 	height: 100px;
@@ -1034,6 +1051,26 @@ a.rm-button-open,
   position: absolute;
   margin: auto;
   z-index: 500;
+}
+
+.buzcol {
+  float: left;
+  width: 49%;
+}
+
+.buzrow {
+  vertical-align: middle;
+}
+
+.buzrow:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.buzicon {
+  position: absolute;
+  top: 40%;
 }
 
 /* Media Queries */
@@ -1137,3 +1174,4 @@ a.rm-button-open,
 		transition-delay: 0s;
 	} */
 }
+
