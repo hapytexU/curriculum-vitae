@@ -7,6 +7,14 @@
   --lgr: #daa520;
 }
 
+p.just {
+  text-align: justify;
+}
+
+p.left {
+  text-align: left;
+}
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
