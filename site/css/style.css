@@ -15,6 +15,10 @@ p.left {
   text-align: left;
 }
 
+img.firmlogo {
+  width: 55%;
+}
+
 * {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
