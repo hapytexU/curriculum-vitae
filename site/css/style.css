@@ -418,6 +418,15 @@ dt:hover + dd a {
   color: var(--gr);
 }
 
+*:target .skillwrap {
+  background-color: #eee8aa;
+}
+
+*:target .skillwrap .skillitem {
+  background-color: var(--gr);
+}
+
+
 dt:hover + dd .skillwrap {
   background-color: #eee8aa;
 }
