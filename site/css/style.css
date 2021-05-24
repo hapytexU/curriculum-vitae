@@ -426,6 +426,10 @@ dt:hover + dd a {
   background-color: var(--gr);
 }
 
+.skillrow .skillcolumn *:target a {
+  color: var(--gr);
+}
+
 
 dt:hover + dd .skillwrap {
   background-color: #eee8aa;
