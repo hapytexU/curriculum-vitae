@@ -289,11 +289,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
     <script src="/js/cv.js"></script>
     <script>$(function() {Curriculum.init(); Curriculum.fillData(); window.onhashchange = Curriculum.readHash;});</script>
-    <script>$.get(
-      'https://api.stackexchange.com/2.2/users/67579/answers?order=desc&sort=activity&site=stackoverflow&filter=total',
-      function (data) {
-        $('#sonum').html(data.total);
-      }
-    );</script>
+    <script>$.get('https://api.stackexchange.com/2.2/users/67579/answers?order=desc&sort=activity&site=stackoverflow&filter=total', function (data) {$('#sonum').html(data.total.toLocaleString());});</script>
   </body>
 </html>
