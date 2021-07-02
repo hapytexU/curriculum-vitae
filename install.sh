@@ -1,3 +1,3 @@
 #!/bin/bash
 
-sudo apt-get install minify yui-compressor scour
+sudo apt-get install jq minify scour yui-compressor
