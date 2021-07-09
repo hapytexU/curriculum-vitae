@@ -8,7 +8,7 @@ dirs: $(dirs)
 	mkdir -p $(dirs:site/%=out_/%)
 
 out_/%.html: site/%.html
-	minify --html-keep-document-tags "$<" -o "$@"
+	bash count_answers.sh | minify --mime text/html --html-keep-document-tags -o "$@"
 
 out_/%.css: site/%.css
 	minify "$<" -o "$@"
