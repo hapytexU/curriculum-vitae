@@ -39,7 +39,7 @@ body {
     font-size: 13px;
     background: #9b5c2d url(/assets/background.jpg);
     -webkit-font-smoothing: antialiased;
-    overflow-y: hidden;
+    overflow-y: scroll;
     overflow-x: hidden;
     font-weight: 300;
     overflow-anchor: none;
