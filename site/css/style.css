@@ -1124,6 +1124,93 @@ a.cv-viewdetails:hover,
 	}
 }
 
+@media screen and (orientation:portrait) {
+  * {
+    overflow-anchor: auto;
+  }
+  .activity {
+    overflow-anchor: auto;
+  }
+
+  .opensource {
+    overflow-anchor: auto;
+  }
+
+  body {
+    overflow-y: auto;
+    overflow-anchor: auto;
+  }
+  div.prev-next {
+    display: none;
+  }
+	.cv-leaflet {
+		width: 100%;
+		height: auto;
+		max-width: 460px;
+		-webkit-perspective: 0px;
+		perspective: 0px;
+	}
+	.cv-page, 
+	.cv-page > div,
+	.cv-page > div > div {
+		position: relative;
+		width: 100%;
+		height: auto;
+	}
+
+	.cv-page > div > div{
+		margin-bottom: 10px;
+		box-shadow: 
+			inset 0 0 0 16px #fff, 
+			inset 0 0 0 17px #e6b741, 
+			inset 0 0 0 18px #fff, 
+			inset 0 0 0 19px #e6b741, 
+			inset 0 0 0 20px #fff, 
+			inset 0 0 0 21px #e6b741,
+			0 3px 5px rgba(0,0,0,0.2);
+	}
+
+	.cv-leaflet .cv-back,
+	.cv-leaflet.cv-open .cv-cover,
+	.cv-leaflet.cv-open .cv-right {
+		-webkit-transform: rotateY(0deg);
+		transform: rotateY(0deg);
+	}
+
+	.cv-overlay, .cv-middle .cv-overlay {
+		background: transparent;
+	}
+
+	/*.cv-right .cv-front,*/
+	.cv-close {
+		display: none;
+	}
+  /*.cv-right .cv- {
+
+  }*/
+
+	.cv-button-open {
+		pointer-events: none;
+	}
+
+	.cv-button-open:after {
+		content: '\2193';
+	}
+
+	.cv-leaflet .cv-modal {
+		position: fixed;
+		width: 80%;
+		top: 50%;
+		left: 50%;
+		margin: 0 0 0 -40%;
+		-webkit-transform: translateZ(0px);
+		transform: translateZ(0px);
+		-webkit-transition: opacity 0.6s ease-in-out 0s;
+		transition: opacity 0.6s ease-in-out 0s;
+	}
+
+}
+
 @media screen and (max-width: 960px) {
   * {
     overflow-anchor: auto;
