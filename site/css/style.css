@@ -458,7 +458,7 @@ dt:hover + dd .skill .skillwrap .skillitem {
   bottom:100px;
   right:-2px;
   z-index: -20000;
-  transition: right 2s ease-out;
+  transition: right 2s ease-out, bottom 2s ease-out;
 }
 
 
