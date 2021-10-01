@@ -400,11 +400,11 @@ dt:hover + dd {
   color: var(--grd);
 }
 
-p:hover {
+/* p:hover {
   color: var(--grd);
-}
+} */
 
-p:hover a {
+p a:hover {
   color: var(--grd);
 }
 
