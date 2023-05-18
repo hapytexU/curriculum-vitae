@@ -3,8 +3,6 @@ fils = $(shell find site/ -mindepth 1 -type f)
 filso = $(fils:site/%=out_/%)
 
 all: dirs $(filso)
-	mkdir -p /var/www/cv
-	cp -r out_/* /var/www/cv/
 
 dirs: $(dirs)
 	mkdir -p $(dirs:site/%=out_/%)
