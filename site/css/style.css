@@ -1041,7 +1041,7 @@ a.cv-viewdetails:hover,
 .cv-logo {
 	width: 100px;
 	height: 100px;
-	background: #977676 url(/assets/me.jpg) no-repeat center center;
+	background: #000000 url(/assets/me.png) no-repeat center center;
 	border-radius: 50%;
 	margin: 20px auto;
 	box-shadow: 
