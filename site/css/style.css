@@ -7,6 +7,7 @@
   --lgr: #daa520;
 }
 
+a img { border: none; }
 p.just {
   text-align: justify;
 }
@@ -1305,5 +1306,3 @@ a.cv-viewdetails:hover,
 		transition-delay: 0s;
 	} */
 }
-
-a img { border: none; }
